@@ -1,4 +1,4 @@
-/* line 4, ../../jade/scss/customize.scss */
+/* line 4, scss/style.scss */
 .title-header {
   background: #ffb321;
   padding: 15px 20px;
@@ -7,63 +7,76 @@
   -moz-box-shadow: 0 1px 1px 0 #ffffff inset;
   -webkit-box-shadow: 0 1px 1px 0 #ffffff inset;
   padding: 14px 30px; }
-  /* line 12, ../../jade/scss/customize.scss */
+  /* line 12, scss/style.scss */
   .title-header h1 {
     margin: 0;
     color: #ffffff !important; }
 
-/* line 18, ../../jade/scss/customize.scss */
+/* line 18, scss/style.scss */
 .sub-title-header {
   background: #fff;
   border-bottom: 1px solid #fff;
   padding: 13px 19px;
   margin-top: 3px; }
 
-/* line 27, ../../jade/scss/customize.scss */
+/* line 26, scss/style.scss */
+.em_nav.menu-header-yellow.menu-header-bottom {
+  width: 25%; }
+  /* line 29, scss/style.scss */
+  .em_nav.menu-header-yellow.menu-header-bottom li a {
+    border-left: none;
+    padding: 15px 18px; }
+/* line 36, scss/style.scss */
 .em_nav.menu-header-yellow li.menu-item-depth-0:hover > a {
   color: #ffb321; }
 
-/* line 35, ../../jade/scss/customize.scss */
+/* line 42, scss/style.scss */
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 29px; }
+
+/* line 50, scss/style.scss */
 .form-search-yellow .input_search button.button {
   background: #ffb321;
   border: 1px solid #ffb321; }
-  /* line 38, ../../jade/scss/customize.scss */
+  /* line 53, scss/style.scss */
   .form-search-yellow .input_search button.button:hover {
     background: #E09C1B;
     border: 1px solid #E09C1B; }
 
-/* line 47, ../../jade/scss/customize.scss */
+/* line 62, scss/style.scss */
 .price-box .price-yellow {
   color: #ffb321; }
 
-/* line 53, ../../jade/scss/customize.scss */
+/* line 68, scss/style.scss */
 .actions-cart .button.btn-cart-yellow {
   border: 2px solid #ffb321; }
-  /* line 55, ../../jade/scss/customize.scss */
+  /* line 70, scss/style.scss */
   .actions-cart .button.btn-cart-yellow:hover {
     background: #ffb321;
     border: 2px solid #ffb321; }
 
-/* line 63, ../../jade/scss/customize.scss */
+/* line 78, scss/style.scss */
 .em_nav a.arrow span {
   background: url(img/icon-nav-yellow.png) no-repeat; }
 
-/* line 70, ../../jade/scss/customize.scss */
+/* line 85, scss/style.scss */
 .menu-item-yellow .menu-item-depth-2.menu-item-text:hover > a {
   color: #ffb321; }
 
-/* line 76, ../../jade/scss/customize.scss */
+/* line 91, scss/style.scss */
 a#em_quickshop_handler {
   border: 2px solid #ffb321; }
-  /* line 78, ../../jade/scss/customize.scss */
+  /* line 93, scss/style.scss */
   a#em_quickshop_handler:hover {
     border: 2px solid #ffb321;
     background: #ffb321; }
 
-/* line 86, ../../jade/scss/customize.scss */
+/* line 101, scss/style.scss */
 .header-container .header-bottom-middle.header-search-yellow {
   width: 43%; }
-/* line 90, ../../jade/scss/customize.scss */
+/* line 105, scss/style.scss */
 .header-container .header-bottom-right.header-contact-yellow {
   width: 240px;
   padding: 25px 20px;
@@ -78,87 +91,19 @@ a#em_quickshop_handler {
   line-height: 25px;
   border: 1px solid #B8B4B4; }
 
-/* line 106, ../../jade/scss/customize.scss */
-.menu_mobile {
-  display: none !important; }
-
-/* line 110, ../../jade/scss/customize.scss */
+/* line 125, scss/style.scss */
 #rev_slider_1_1490, #rev_slider_1_1490_wrapper {
   width: 1171px;
   height: 464px; }
 
-@media only screen and (max-width: 719px) {
-  /* line 117, ../../jade/scss/customize.scss */
-  .container_24 .grid_6,
-  .container_24 .grid_18 {
-    width: 100%; }
+/* line 130, scss/style.scss */
+.product-name a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  max-height: 34px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical; }
 
-  /* line 123, ../../jade/scss/customize.scss */
-  .header-bottom-right.header-contact-yellow,
-  .header-bottom-middle.header-search-yellow {
-    display: none; }
-
-  /* line 129, ../../jade/scss/customize.scss */
-  .header-container .header-bottom-left.menu-header-yellow {
-    width: 100%;
-    text-align: center; }
-    /* line 132, ../../jade/scss/customize.scss */
-    .header-container .header-bottom-left.menu-header-yellow .hnav {
-      text-align: center; }
-      /* line 134, ../../jade/scss/customize.scss */
-      .header-container .header-bottom-left.menu-header-yellow .hnav .menu-item-depth-0 {
-        float: none;
-        display: inline-block; }
-  /* line 140, ../../jade/scss/customize.scss */
-  .header-container .header-bottom .inner_bottom {
-    float: none !important; }
-
-  /* line 146, ../../jade/scss/customize.scss */
-  .cms-index-index .wrapper_menu_hoz.menu_mobile {
-    display: block !important; }
-  /* line 149, ../../jade/scss/customize.scss */
-  .cms-index-index .wrapper_menu_hoz.menu_desktop {
-    display: none !important; }
-
-  /* line 154, ../../jade/scss/customize.scss */
-  #menu {
-    display: none; }
-
-  /* line 158, ../../jade/scss/customize.scss */
-  #rev_slider_1_1490, #rev_slider_1_1490_wrapper {
-    width: 100% !important;
-    height: auto; }
-
-  /* line 163, ../../jade/scss/customize.scss */
-  #rev_slider_1_1490_wrapper {
-    padding: 0 !important; }
-
-  /* line 168, ../../jade/scss/customize.scss */
-  #menu-mobile .slicknav_menu {
-    background: #ffb321; }
-  /* line 171, ../../jade/scss/customize.scss */
-  #menu-mobile .slicknav_btn {
-    background: #CE9A16; }
-  /* line 174, ../../jade/scss/customize.scss */
-  #menu-mobile .slicknav_icon {
-    display: none; }
-
-  /* line 179, ../../jade/scss/customize.scss */
-  .sub-title-header {
-    display: block !important; }
-
-  /* line 184, ../../jade/scss/customize.scss */
-  .cms-galabigshop-home.adapt-0 .wrapper_menu_hoz #nav li a,
-  .cms-galabigshop-home.adapt-0 .wrapper_area0203 .nav-container #nav li a,
-  .cms-galabigshop-home.adapt-0 .em_nav .menu-item-depth-0 > a,
-  .cms-galabigshop-home.adapt-0 .em_nav .menu-item-depth-0 > .em-catalog-navigation > li > a {
-    border: none !important;
-    margin-bottom: 0; }
-  /* line 191, ../../jade/scss/customize.scss */
-  .cms-galabigshop-home.adapt-0 .menu-item-link > .menu-container {
-    margin: 5px 0; }
-  /* line 194, ../../jade/scss/customize.scss */
-  .cms-galabigshop-home.adapt-0 .em_nav a.arrow span {
-    background: url(img/icon-nav-drop-yellow.png) no-repeat !important; } }
-
-/*# sourceMappingURL=customize.css.map */
+/*# sourceMappingURL=style.css.map */

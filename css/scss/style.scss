@@ -23,11 +23,26 @@ $white: #ffffff;
 }
 
 .em_nav.menu-header-yellow {
+  &.menu-header-bottom {
+    width: 25%;
+    li {
+      a {
+        border-left: none;
+        padding: 15px 18px;
+      }
+    }
+  }
   li.menu-item-depth-0 {
     &:hover > a {
       color: $yellow;
     }
   }
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 29px;
 }
 
 .form-search-yellow {
@@ -102,97 +117,108 @@ a#em_quickshop_handler {
     border: 1px solid #B8B4B4;
   }
 }
-
-.menu_mobile {
-  display: none !important;
-}
+//
+//.menu_mobile {
+//  display: none !important;
+//}
 
 #rev_slider_1_1490, #rev_slider_1_1490_wrapper {
   width: 1171px;
   height: 464px;
 }
 
-@media only screen and (max-width: 719px) {
-  .container_24 {
-    .grid_6,
-    .grid_18 {
-      width: 100%;
-    }
-  }
-
-  .header-bottom-right.header-contact-yellow,
-  .header-bottom-middle.header-search-yellow {
-    display: none;
-  }
-
-  .header-container {
-    .header-bottom-left.menu-header-yellow {
-      width: 100%;
-      text-align: center;
-      .hnav {
-        text-align: center;
-        .menu-item-depth-0 {
-          float: none;
-          display: inline-block;
-        }
-      }
-    }
-    .header-bottom .inner_bottom {
-      float: none !important;
-    }
-  }
-
-  .cms-index-index {
-    .wrapper_menu_hoz.menu_mobile {
-      display: block !important;
-    }
-    .wrapper_menu_hoz.menu_desktop {
-      display: none !important;
-    }
-  }
-
-  #menu {
-    display: none;
-  }
-
-  #rev_slider_1_1490, #rev_slider_1_1490_wrapper {
-    width: 100% !important;
-    height: auto;
-  }
-
-  #rev_slider_1_1490_wrapper {
-    padding: 0 !important;
-  }
-
-  #menu-mobile {
-    .slicknav_menu {
-      background: $yellow;
-    }
-    .slicknav_btn {
-      background: #CE9A16;;
-    }
-    .slicknav_icon {
-      display: none;
-    }
-  }
-
-  .sub-title-header {
-    display: block !important;
-  }
-
-  .cms-galabigshop-home.adapt-0 {
-    .wrapper_menu_hoz #nav li a,
-    .wrapper_area0203 .nav-container #nav li a,
-    .em_nav .menu-item-depth-0 > a,
-    .em_nav .menu-item-depth-0 > .em-catalog-navigation > li > a {
-      border: none !important;
-      margin-bottom: 0;
-    }
-    .menu-item-link > .menu-container {
-      margin: 5px 0;
-    }
-    .em_nav a.arrow span {
-      background: url(img/icon-nav-drop-yellow.png) no-repeat !important;
-    }
-  }
+.product-name a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  max-height: 34px;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
+
+//@media only screen and (max-width: 719px) {
+//  .container_24 {
+//    .grid_6,
+//    .grid_18 {
+//      width: 100%;
+//    }
+//  }
+//
+//  .header-bottom-right.header-contact-yellow,
+//  .header-bottom-middle.header-search-yellow {
+//    display: none;
+//  }
+//
+//  .header-container {
+//    .header-bottom-left.
+// {
+//      width: 100%;
+//      text-align: center;
+//      .hnav {
+//        text-align: center;
+//        .menu-item-depth-0 {
+//          float: none;
+//          display: inline-block;
+//        }
+//      }
+//    }
+//    .header-bottom .inner_bottom {
+//      float: none !important;
+//    }
+//  }
+//
+//  .cms-index-index {
+//    .wrapper_menu_hoz.menu_mobile {
+//      display: block !important;
+//    }
+//    .wrapper_menu_hoz.menu_desktop {
+//      display: none !important;
+//    }
+//  }
+//
+//  #menu {
+//    display: none;
+//  }
+//
+//  #rev_slider_1_1490, #rev_slider_1_1490_wrapper {
+//    width: 100% !important;
+//    height: auto;
+//  }
+//
+//  #rev_slider_1_1490_wrapper {
+//    padding: 0 !important;
+//  }
+//
+//  #menu-mobile {
+//    .slicknav_menu {
+//      background: $yellow;
+//    }
+//    .slicknav_btn {
+//      background: #CE9A16;;
+//    }
+//    .slicknav_icon {
+//      display: none;
+//    }
+//  }
+//
+//  .sub-title-header {
+//    display: block !important;
+//  }
+//
+//  .cms-galabigshop-home.adapt-0 {
+//    .wrapper_menu_hoz #nav li a,
+//    .wrapper_area0203 .nav-container #nav li a,
+//    .em_nav .menu-item-depth-0 > a,
+//    .em_nav .menu-item-depth-0 > .em-catalog-navigation > li > a {
+//      border: none !important;
+//      margin-bottom: 0;
+//    }
+//    .menu-item-link > .menu-container {
+//      margin: 5px 0;
+//    }
+//    .em_nav a.arrow span {
+//      background: url(img/icon-nav-drop-yellow.png) no-repeat !important;
+//    }
+//  }
+//}

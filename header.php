@@ -41,6 +41,14 @@
 
     <?php wp_head() ?>
   </head>
+  <?php
+      $theme_options = get_option('page_info_setting');
+      echo '<pre>';
+      //var_dump($theme_options);
+      echo '</pre>';
+      $myupload = get_post(37);
+      //print_r($myupload);
+  ?>
   <body class="cms-index-index cms-galabigshop-home adapt-3">
     <div class="wrapper">
       <div class="page one-column">
@@ -63,16 +71,16 @@
                       );
                       wp_nav_menu($topMenu);
                       ?>
-                      <a href="./index.html" title="GalaBigShop  Theme" class="logo">
-                        <img src="<?= SKIN ?>galabigshop/images/logo.png" alt="GalaBigShop  Theme"/></a>
+                        <a href="" title="GalaBigShop  Theme" class="logo">
+                        <img src="<?= $myupload->guid ?>" alt="GalaBigShop  Theme"/></a>
 
                       <?php get_search_form(); ?>
 
                       <div class="header-bottom-right header-contact-yellow">
                         <div class="dropdown-cart no_quickshop top-cart-inner">
                           <div class="summary block-title contact">
-                            <span>204 Nguyễn Huy Hoàng Đà Nẵng</span>
-                            <span>05113.583.286 - 0905.025.309</span>
+                            <span><?php echo $theme_options['address']; ?></span>
+                            <span><?php echo $theme_options['landline']; ?> - <?php echo $theme_options['cell_phone']; ?></span>
                           </div>
                         </div>
                       </div>
@@ -100,42 +108,6 @@
                 );
                 wp_nav_menu($primaryMenu);
                 ?>             
-              </div>
-            </div>
-            <div class="clear"></div>
-          </div>
-        </div>
-        <div class="wrapper_menu_hoz menu_mobile">
-          <div class="container_24 ">
-            <div class="grid_24">
-              <div class="menu-wrapper wrapper-5_4864">
-                <div class="em_nav menu-header-yellow">
-                  <ul class="hnav" id="menu">
-                    <li class="menu-item-link menu-item-depth-0">
-                      <a href=""><span>Home</span></a>
-                    </li>
-                    <li class="menu-item-link menu-item-depth-0">
-                      <a href=""><span>Danh mục sửa chữa</span></a>
-                    </li>
-                    <li class="menu-item-link menu-item-depth-0">
-                      <a href=""><span>Phụ kiện</span></a>
-                    </li>
-                    <li class="menu-item-link menu-item-depth-0">
-                      <a href=""><span>Unlock,Unbrick</span></a>
-                    </li>
-                    <li class="menu-item-link menu-item-depth-0">
-                      <a href=""><span>Tin tức</span></a>
-                    </li>
-                    <li class="menu-item-link menu-item-depth-0">
-                      <a href=""><span>Bảng giá</span></a>
-                    </li>
-                    <li class="menu-item-link menu-item-depth-0  ">
-                      <a href=""><span>Giới thiệu</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <div id="menu-mobile"></div>
-                </div>
               </div>
             </div>
             <div class="clear"></div>

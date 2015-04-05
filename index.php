@@ -403,7 +403,7 @@
                                 <span class="amount"><a href="#" onclick="setLocation('./product.html')">1 Review(s)</a></span>
                               </div>
                             </div>
-                            <div class="actions js-addcart hover-slide" name="product_0" style="display: block !important;">
+                            <div class="actions js-addcart hover-slide" name="product_0" style="display: none;">
                               <!--product add to cart-->
                               <div class="actions-cart">
                                 <button type="button" title="Add to Cart" class="button btn-cart btn-cart-yellow"><span><span>Add to Cart</span></span></button>
@@ -906,10 +906,13 @@
     <div class="clear"></div>
   </div>
 </div>
+<?php
+  $theme_options = get_option('page_info_setting');
+?>
 <div class="wrapper_map">
   <div class="container_24 ">
     <div class="grid_24">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3834.110403404863!2d108.21343480000002!3d16.0597597!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219b5fa87612d%3A0x181d1edee9771dc!2zMjA0IE5ndXnhu4VuIEhvw6BuZywgVGhhbmggS2jDqiwgxJDDoCBO4bq1bmcsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1427966350133" width="100%" height="450" frameborder="0" style="border:0"></iframe>
+        <?= $theme_options['map'] ?>
     </div>
     <div class="clear"></div>
   </div>

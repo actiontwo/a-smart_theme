@@ -1,9 +1,9 @@
-<?php
-$theme_options = get_option('page_info_setting');
-//echo '<pre>';
-//var_dump($theme_options);
-//echo '</pre>';
-?>
+ <?php
+      $theme_options = get_option('page_info_setting');
+      //echo '<pre>';
+      //var_dump($theme_options);
+      //echo '</pre>';
+ ?>
 <div class="wrapper_top_footer">
   <div>
     <div class="container_24 ">

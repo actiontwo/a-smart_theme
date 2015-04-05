@@ -8,7 +8,8 @@ $includes = array(
     'include/shortcode.php',
     'include/theme_options.php',
     'include/function_piklist.php',
-//  'post_type/example.php',
+    'post_types/products.php',
+    'post_types/accessories.php',
 //  'widget/example.php'
 );
 

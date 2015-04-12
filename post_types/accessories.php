@@ -15,6 +15,7 @@ function post_type_accessories($post_types)
           , 'revisions'
           , 'title'
           , 'custom-fields'
+          , 'thumbnail'
       )
       , 'hide_meta_box' => array(
           'slug'

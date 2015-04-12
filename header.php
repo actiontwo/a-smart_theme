@@ -42,12 +42,10 @@
     <?php wp_head() ?>
   </head>
   <?php
-      $theme_options = get_option('page_info_setting');
-      echo '<pre>';
-      //var_dump($theme_options);
-      echo '</pre>';
-      $myupload = get_post(37);
-      //print_r($myupload);
+  $theme_options = get_option('page_info_setting');
+  $logo_id       = $theme_options['logo'];
+
+//      $myupload = get_post(37);
   ?>
   <body class="cms-index-index cms-galabigshop-home adapt-3">
     <div class="wrapper">
@@ -71,8 +69,8 @@
                       );
                       wp_nav_menu($topMenu);
                       ?>
-                        <a href="" title="GalaBigShop  Theme" class="logo">
-                        <img src="<?= $myupload->guid ?>" alt="GalaBigShop  Theme"/></a>
+                      <a href="" title="GalaBigShop  Theme" class="logo">
+                        <img src="<?= wp_get_attachment_url($logo_id) ?>" alt="logo sua chua smartphone danang" width="50px"/></a>
 
                       <?php get_search_form(); ?>
 

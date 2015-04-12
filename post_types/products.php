@@ -16,6 +16,7 @@ function post_type_products($post_types)
           , 'title'
 //          , 'custom-fields'
           , 'editor'
+          ,'thumbnail'
       )
       , 'hide_meta_box' => array(
           'slug'

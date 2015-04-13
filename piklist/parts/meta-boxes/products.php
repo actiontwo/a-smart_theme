@@ -1,7 +1,7 @@
 <?php
 /*
   Title: Products Details
-  Post Type: sua_chua
+  Post Type: sua_chua,phu_kien
   Capability: manage_options
  */
 

@@ -38,6 +38,7 @@ piklist('module/slider', array());
                 ))
             );
             ?>
+                <div class="clear"></div>
           </div>
         </div>
       </div>

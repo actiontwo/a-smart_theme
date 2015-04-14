@@ -7,14 +7,19 @@
 
 
 <?php
-$categories = get_terms($settings['type_side_menu'],
-    array(
-    'orderby' => 'id'
-    , 'order' => 'ASC'
-    , 'hide_empty' => false
-    , 'parent' => 0
-    ));
+$args       = array(
+    'type' => 'post',
+    'child_of' => 0,
+    'parent' => 0,
+    'orderby' => 'name',
+    'order' => 'ASC',
+    'hide_empty' => 0,
+    'taxonomy' => $settings['type_side_menu'],
+    'pad_counts' => false
+);
+$categories = get_categories($args);
 //debug($categories);
+
 ?>
 
 <div class="widget widget-static-block menu">
@@ -25,16 +30,22 @@ $categories = get_terms($settings['type_side_menu'],
         <ul class="vnav ">
           <?php
           foreach ($categories as $category):
-            $sub_categories = get_terms($settings['type_side_menu'],
-                array(
-                'orderby' => 'id'
-                , 'order' => 'ASC'
-                , 'hide_empty' => false
-                , 'parent' => $category->term_id
-            ));
+            $sub_args           = array(
+                'type' => 'post',
+                'child_of' => 0,
+                'parent' => $category->term_id,
+                'orderby' => 'name',
+                'order' => 'ASC',
+                'hide_empty' => 0,
+                'taxonomy' => $settings['type_side_menu'],
+                'pad_counts' => false
+            );
+            $sub_categories     = get_categories($sub_args);
+          
             ?>
-            <li class="menu-item-link menu-item-depth-0 <?= !empty($sub_categories) ? 'menu-item-parent': ''?>">
-              <a href="<?= get_permalink($category->term_id) ?>"><span><?= $category->name ?></span></a>
+            <li class="menu-item-link menu-item-depth-0 <?= !empty($sub_categories)
+                ? 'menu-item-parent' : '' ?>">
+              <a href="<?= get_category_link( $category->term_id )?>"><span><?= $category->name ?></span></a>
               <?php
 //              debug(empty($sub_categories));
               if (!empty($sub_categories)) {

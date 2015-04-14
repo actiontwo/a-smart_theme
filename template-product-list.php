@@ -1,4 +1,8 @@
-<?php /* Template Name: Template Example */ ?>
+<?php
+/* 
+ * Template Name:  Products List
+ */
+?>
 
 <?php get_header() ?>
 

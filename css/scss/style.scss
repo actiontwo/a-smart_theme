@@ -1,10 +1,10 @@
-$yellow: #ffb321;
+$yellow: #1B77C5;
 $white: #ffffff;
 
 .title-header {
   background: $yellow;
   padding: 15px 20px;
-  border: 1px solid #ed9c00;
+  border: 1px solid #0062B5;
   box-shadow: 0 1px 1px 0 $white inset;
   -moz-box-shadow: 0 1px 1px 0 $white inset;
   -webkit-box-shadow: 0 1px 1px 0 $white inset;
@@ -51,8 +51,8 @@ $white: #ffffff;
       background: $yellow;
       border: 1px solid $yellow;
       &:hover {
-        background: #E09C1B;
-        border: 1px solid #E09C1B;
+        background: #0B62AC;
+        border: 1px solid #084476;
       }
     }
   }

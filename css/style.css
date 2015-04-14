@@ -1,16 +1,16 @@
 /* line 4, scss/style.scss */
 .title-header {
-  background: #ffb321;
+  background: #1B77C5;
   padding: 15px 20px;
-  border: 1px solid #ed9c00;
-  box-shadow: 0 1px 1px 0 white inset;
-  -moz-box-shadow: 0 1px 1px 0 white inset;
-  -webkit-box-shadow: 0 1px 1px 0 white inset;
+  border: 1px solid #0062B5;
+  box-shadow: 0 1px 1px 0 #ffffff inset;
+  -moz-box-shadow: 0 1px 1px 0 #ffffff inset;
+  -webkit-box-shadow: 0 1px 1px 0 #ffffff inset;
   padding: 14px 30px; }
   /* line 12, scss/style.scss */
   .title-header h1 {
     margin: 0;
-    color: white !important; }
+    color: #ffffff !important; }
 
 /* line 18, scss/style.scss */
 .sub-title-header {
@@ -28,7 +28,7 @@
     padding: 15px 18px; }
 /* line 36, scss/style.scss */
 .em_nav.menu-header-yellow li.menu-item-depth-0:hover > a {
-  color: #ffb321; }
+  color: #1B77C5; }
 
 /* line 42, scss/style.scss */
 .logo {
@@ -38,24 +38,24 @@
 
 /* line 50, scss/style.scss */
 .form-search-yellow .input_search button.button {
-  background: #ffb321;
-  border: 1px solid #ffb321; }
+  background: #1B77C5;
+  border: 1px solid #1B77C5; }
   /* line 53, scss/style.scss */
   .form-search-yellow .input_search button.button:hover {
-    background: #E09C1B;
-    border: 1px solid #E09C1B; }
+    background: #0B62AC;
+    border: 1px solid #084476; }
 
 /* line 62, scss/style.scss */
 .price-box .price-yellow {
-  color: #ffb321; }
+  color: #1B77C5; }
 
 /* line 68, scss/style.scss */
 .actions-cart .button.btn-cart-yellow {
-  border: 2px solid #ffb321; }
+  border: 2px solid #1B77C5; }
   /* line 70, scss/style.scss */
   .actions-cart .button.btn-cart-yellow:hover {
-    background: #ffb321;
-    border: 2px solid #ffb321; }
+    background: #1B77C5;
+    border: 2px solid #1B77C5; }
 
 /* line 78, scss/style.scss */
 .em_nav a.arrow span {
@@ -63,15 +63,15 @@
 
 /* line 85, scss/style.scss */
 .menu-item-yellow .menu-item-depth-2.menu-item-text:hover > a {
-  color: #ffb321; }
+  color: #1B77C5; }
 
 /* line 91, scss/style.scss */
 a#em_quickshop_handler {
-  border: 2px solid #ffb321; }
+  border: 2px solid #1B77C5; }
   /* line 93, scss/style.scss */
   a#em_quickshop_handler:hover {
-    border: 2px solid #ffb321;
-    background: #ffb321; }
+    border: 2px solid #1B77C5;
+    background: #1B77C5; }
 
 /* line 101, scss/style.scss */
 .header-container .header-bottom-middle.header-search-yellow {
@@ -105,3 +105,5 @@ a#em_quickshop_handler {
   max-height: 34px;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical; }
+
+/*# sourceMappingURL=style.css.map */

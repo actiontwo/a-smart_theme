@@ -1,7 +1,11 @@
 <section id="" class="product-list">
-  <div class="page-title title-header"><h1><?= $data['title'] ?></h1></div>
 
-  <ul class="row list-unstyled">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title"><?= $data['title'] ?></h3>
+    </div>
+    <div class="panel-body">
+     <ul class="row list-unstyled">
     <?php
     $query_param = array(
         'post_type' => $data['type'],
@@ -45,4 +49,6 @@
     endwhile;
     ?>
   </ul>
+    </div>
+  </div>
 </section>

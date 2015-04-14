@@ -9,13 +9,19 @@
       ?>
     </div>
     <div class='col-md-3'>
-      <h5>Hỗ trợ trực tuyến </h5>
-      <ul>
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Hỗ trợ trực tuyến </h3>
+        </div>
+        <div class="panel-body">
+          <ul class='list-unstyled'>
 
-        <li>Kĩ Thuật:</li>
-        <li>Bán Hàng:</li>
-        <li>Thắc mắc khiếu nại:</li>
-      </ul>
+            <li><b>Kĩ Thuật:</b> 0966555576</li>
+            <li><b>Bán Hàng:</b> 0966555576</li>
+            <li><b>Thắc mắc khiếu nại:</b> 0966555576</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class='col-md-4'>
       <div id="fb-root"></div>
@@ -28,13 +34,7 @@
           js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=176945742497367";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="fb-page" data-href="https://www.facebook.com/AsmartStore" data-hide-cover="false" data-show-facepile="true" data-show-posts="false">
-        <div class="fb-xfbml-parse-ignore">
-          <blockquote cite="https://www.facebook.com/AsmartStore">
-            <a href="https://www.facebook.com/AsmartStore">Asmart Store</a>
-          </blockquote>
-        </div>
-      </div>
+      <div class="fb-page" data-href="https://www.facebook.com/AsmartStore" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/AsmartStore"><a href="https://www.facebook.com/AsmartStore">Asmart Store</a></blockquote></div></div>
     </div>
 
   </div>

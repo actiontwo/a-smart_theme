@@ -4,16 +4,12 @@
   Description: A description of what my widget does
  */
 ?>
-
-
-<div class="widget">
-  <div class="widget-title">
-    <h3>
-      <?= $settings['title_side_menu'] ?>
-    </h3>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title"> <?= $settings['title_side_menu'] ?></h3>
   </div>
-
-  <?php
+  <div class="panel-body">
+   <?php
   $topMenu = array(
       'theme_location' => $settings['type_side_menu'][0],
       'container' => 'div',
@@ -25,5 +21,5 @@
   );
   wp_nav_menu($topMenu);
   ?>
-
+  </div>
 </div>

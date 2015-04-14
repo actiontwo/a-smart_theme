@@ -79,9 +79,9 @@ class Left_Menu_Walker extends Walker_Nav_Menu
     $indent        = ( $depth > 0 ? str_repeat("\t", $depth) : '' ); // code indent
     $display_depth = ( $depth + 1); // because it counts the first submenu as 0
     $classes       = array(
-        ( $display_depth <= 1 ? 'menu-container' : '' ),
+        ( $display_depth <= 1 ? 'list-unstyled menu-container' : '' ),
         ( $display_depth % 2 ? '' : '' ),
-        ( $display_depth >= 2 ? 'sub-menu-'.$display_depth : '' )//,
+        ( $display_depth >= 2 ? 'list-unstyled sub-menu-'.$display_depth : '' )//,
         // 'menu-depth-' . $display_depth
     );
     $class_names   = implode(' ', $classes);

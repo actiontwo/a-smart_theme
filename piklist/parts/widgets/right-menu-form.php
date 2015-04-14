@@ -15,8 +15,8 @@ piklist('field',
     , 'label' => 'Type'
     , 'description' => 'Field Description'
     , 'choices' => array(
-        'loai_sua_chua' => 'Sửa chữa'
-        , 'loai_phu_kien' => 'Phụ kiện'
+        'productMenu' => 'Sửa chữa'
+        , 'accessoryMenu' => 'Phụ kiện'
 
     )
 ));

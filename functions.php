@@ -23,3 +23,20 @@ function debug($data){
   var_dump($data);
   echo '</pre>';
 }
+
+
+//function setup_theme(){
+//  add_theme_support('woocommerce');
+//}
+//
+//add_action('after_setup_theme',
+//    'setup_theme');
+//
+////
+//remove_action('woocommerce_single_product_summary','woocommerce_template_single_title',5);
+//add_action('woocommerce_single_product_summary','woocommerce_template_single_title',5);
+//function woocommerce_template_single_title(){
+  ?>
+  <!--<h1 itemprop="name asdsadsa" class="product_title entry-title">//<?php the_title(); ?> AAAAAAAAAAAAAA</h1>-->
+ <?php
+//}

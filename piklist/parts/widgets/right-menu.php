@@ -4,7 +4,7 @@
   Description: A description of what my widget does
  */
 ?>
-<div class="panel panel-primary">
+<div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title"> <?= $settings['title_side_menu'] ?></h3>
   </div>

@@ -10,7 +10,7 @@ a {
   /* line 16, scss/style.scss */
   a:hover, a:focus {
     text-decoration: none;
-    color: #1C76C4; }
+    color: #1c76c4; }
 
 /* line 23, scss/style.scss */
 .wrapper_header {
@@ -60,7 +60,7 @@ a {
     color: #ececec; }
     /* line 67, scss/style.scss */
     .wrapper_footer a:hover {
-      color: #1C76C4; }
+      color: #1c76c4; }
 
 /* line 74, scss/style.scss */
 .wrapper_slider .container {
@@ -73,27 +73,26 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  color: #000000; }
+  color: black; }
 
 /* line 87, scss/style.scss */
 .price-box {
   color: #1C76C4;
   font-size: 16px; }
 
-/* line 92, scss/style.scss */
-.panel {
+/*.panel {
   border-radius: 2px;
   background: none;
-  box-shadow: none; }
-  /* line 96, scss/style.scss */
-  .panel .panel-heading {
-    border-radius: 0; }
-
+  box-shadow: none;
+  .panel-heading {
+    border-radius: 0;
+  }
+}*/
 /* line 101, scss/style.scss */
-.em_nav .menu-item-depth-0 {
+.em_nav li {
   position: relative; }
   /* line 103, scss/style.scss */
-  .em_nav .menu-item-depth-0 a {
+  .em_nav li a {
     display: block;
     padding: 7px 20px 8px; }
 /* line 108, scss/style.scss */
@@ -125,32 +124,50 @@ a {
 .menu-item:hover {
   background: #fff; }
 
-/* line 139, scss/style.scss */
-.sidebar .panel {
-  background: #fafafa; }
-/* line 142, scss/style.scss */
-.sidebar .panel-body {
-  padding: 0; }
-/* line 145, scss/style.scss */
-.sidebar .panel-heading {
-  background: #fafafa;
-  color: #505050;
-  border-color: #ececec; }
-
+/*.sidebar {
+  .panel {
+    background: $gray-lighter;
+  }
+  .panel-body {
+    padding: 0;
+  }
+  .panel-heading {
+    background: $gray-lighter;
+    color: $gray-dark;
+    border-color: $gray;
+  }
+}*/
 /* line 152, scss/style.scss */
-.panel-primary {
+.panel-no-border {
   border: none; }
 
-/* line 156, scss/style.scss */
-.product-detail {
-  background: #fff; }
+/* line 155, scss/style.scss */
+.panel-no-bg {
+  background-color: transparent;
+  box-shadow: none; }
   /* line 158, scss/style.scss */
-  .product-detail li.item {
-    box-shadow: 0 1px 2px 0 #ececec;
-    -moz-box-shadow: 0 1px 2px 0 #ececec;
-    -webkit-box-shadow: 0 1px 2px 0 #ececec; }
-  /* line 163, scss/style.scss */
-  .product-detail .product-shop {
-    padding: 5px; }
+  .panel-no-bg .panel-body {
+    padding: 15px 0; }
 
-/*# sourceMappingURL=style.css.map */
+/* line 163, scss/style.scss */
+.box-white {
+  padding: 5px;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  background: #fff; }
+
+/* line 170, scss/style.scss */
+.product-name {
+  line-height: 20px; }
+
+/*
+.product-detail {
+  background: #fff;
+  li.item {
+    box-shadow: 0 1px 2px 0 $gray;
+    -moz-box-shadow: 0 1px 2px 0 $gray;
+    -webkit-box-shadow: 0 1px 2px 0 $gray;
+  }
+  .product-shop {
+    padding: 5px;
+  }
+}*/

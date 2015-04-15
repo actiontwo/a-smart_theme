@@ -14,7 +14,7 @@ a {
   color: $gray-dark;
   cursor: pointer;
   &:hover,
-  &:focus {
+    &:focus {
     text-decoration: none;
     color: $blue;
   }
@@ -89,16 +89,16 @@ a {
   font-size: 16px;
 }
 
-.panel {
+/*.panel {
   border-radius: 2px;
   background: none;
   box-shadow: none;
   .panel-heading {
     border-radius: 0;
   }
-}
+}*/
 .em_nav {
-  .menu-item-depth-0 {
+  li {
     position: relative;
     a {
       display: block;
@@ -115,7 +115,7 @@ a {
     background: $gray-lighter;
   }
   .menu-item-depth-0:hover > .menu-container,
-  .menu-item-depth-0.hover > .menu-container {
+    .menu-item-depth-0.hover > .menu-container {
     left: 94%;
   }
   .menu-item-link > ul,
@@ -135,7 +135,7 @@ a {
     background: #fff;
   }
 }
-.sidebar {
+/*.sidebar {
   .panel {
     background: $gray-lighter;
   }
@@ -147,12 +147,30 @@ a {
     color: $gray-dark;
     border-color: $gray;
   }
-}
+}*/
 
-.panel-primary {
+.panel-no-border {
   border: none;
 }
+.panel-no-bg {
+  background-color: transparent;
+  box-shadow: none;
+  .panel-body{
 
+    padding: 15px 0;
+  }
+}
+.box-white{
+  padding: 5px;
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+
+.product-name {
+  line-height: 20px;
+}
+/*
 .product-detail {
   background: #fff;
   li.item {
@@ -163,4 +181,4 @@ a {
   .product-shop {
     padding: 5px;
   }
-}
+}*/

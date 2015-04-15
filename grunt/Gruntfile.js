@@ -52,7 +52,7 @@ module.exports = function (grunt) {
       assets: {
 
         // Assets to watch:
-        files: ['jade/**/*'],
+        files: ['../css/**/*'],
 
         // When assets are changed:
         tasks: tasks

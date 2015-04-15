@@ -2,20 +2,20 @@
 
 function themeslug_enqueue_script()
 {
-  // Add script js to footer
-  $scripts = array(      
-      array(
-          'id' => 'jquery',
-          'src' => "//code.jquery.com/jquery-1.11.2.min.js",
-          'in_footer' => true),
-      array(
-          'id' => 'jquery-migrate',
-          'src' => "//code.jquery.com/jquery-migrate-1.2.1.min.js",
-          'in_footer' => true),
-      array(
-          'id' => 'bootstrap',
-          'src' => BOOTSTRAP."js/bootstrap.min.js",
-          'in_footer' => true),
+    // Add script js to footer
+    $scripts = array(
+        array(
+            'id' => 'jquery',
+            'src' => "//code.jquery.com/jquery-1.11.2.min.js",
+            'in_footer' => true),
+        array(
+            'id' => 'jquery-migrate',
+            'src' => "//code.jquery.com/jquery-migrate-1.2.1.min.js",
+            'in_footer' => true),
+        array(
+            'id' => 'bootstrap',
+            'src' => BOOTSTRAP . "js/bootstrap.min.js",
+            'in_footer' => true),
 //      array(
 //          'id' => 'prototype',
 //          'src' => JS."prototype/prototype.js",
@@ -172,33 +172,31 @@ function themeslug_enqueue_script()
 //          'id' => 'jquery.slicknav',
 //          'src' => "http://slicknav.com/mobile-menu/jquery.slicknav.js",
 //          'in_footer' => false),
-  );
+    );
 
-  foreach ($scripts as $script) {
-    wp_enqueue_script($script['id'], $script['src'], array(), null,
-        $script['in_footer']);
-  }
-  // Add style  js to header
-  $styles = array(
-      array(
-          'id' => 'bootstrap',
-          'src' => BOOTSTRAP."css/bootstrap.min.css",
-          'in_footer' => false),
-            array(
-          'id' => 'bootstrap-theme',
-          'src' => BOOTSTRAP."css/bootstrap-theme.min.css",
-          'in_footer' => false),
-         array(
-          'id' => 'normalize-',
-          'src' => "https://necolas.github.io/normalize.css/3.0.2/normalize.css",
-          'in_footer' => false)
+    foreach ($scripts as $script) {
+        wp_enqueue_script($script['id'], $script['src'], array(), null,
+            $script['in_footer']);
+    }
+    // Add style  js to header
+    $styles = array(
+        array(
+            'id' => 'bootstrap',
+            'src' => BOOTSTRAP . "css/bootstrap.min.css",
+            'in_footer' => false),
+        array(
+            'id' => 'bootstrap-theme',
+            'src' => BOOTSTRAP . "css/bootstrap-theme.min.css",
+            'in_footer' => false),
+        array(
+            'id' => 'normalize-',
+            'src' => "https://necolas.github.io/normalize.css/3.0.2/normalize.css",
+            'in_footer' => false),
 
-
-      
-//      array(
-//          'id' => 'widgets',
-//          'src' => SKIN."galabigshop/css/widgets.css",
-//          'in_footer' => false),
+        array(
+            'id' => 'widgets',
+            'src' => CSS . "style.css",
+            'in_footer' => false)
 //      array(
 //          'id' => 'em_cloudzoom',
 //          'src' => SKIN."galabigshop/css/em_cloudzoom.css",
@@ -279,11 +277,12 @@ function themeslug_enqueue_script()
 //          'id' => 'slicknav',
 //          'src' => "http://slicknav.com/mobile-menu/slicknav.css",
 //          'in_footer' => false),
-  );
+    );
 
-  foreach ($styles as $style) {
-    wp_enqueue_style($style['id'], $style['src'], array(), null,
-        $style['in_footer']);
-  }
+    foreach ($styles as $style) {
+        wp_enqueue_style($style['id'], $style['src'], array(), null,
+            $style['in_footer']);
+    }
 }
+
 add_action('wp_enqueue_scripts', 'themeslug_enqueue_script');

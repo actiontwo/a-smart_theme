@@ -1,0 +1,137 @@
+$gray: #ececec;
+$gray-lighter: #fafafa;
+$gray-dark: #505050;
+$blue: #1C76C4;
+$black: #000000;
+$arial: Arial;
+
+body {
+  color: $gray-dark;
+  font-family: $arial, sans-serif;
+}
+
+a {
+  color: $gray-dark;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+.wrapper_header {
+  margin-top: 15px;
+}
+
+.wrapper_menu_privary {
+  background: $gray-lighter;
+  border: 1px solid $gray;
+  border-left: 0;
+  border-right: 0;
+  ul {
+    margin: 0;
+    li {
+      position: relative;
+      float: left;
+      padding: 0;
+      &:hover {
+        background: #fff;
+      }
+      a {
+        padding: 15px 20px;
+        border-left: 1px solid #dedede;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.wrapper_content,
+.wrapper_slider,
+.wrapper_map {
+  background: $gray;
+  padding: 10px 0;
+}
+
+.wrapper_footer {
+  background: #000;
+  color: $gray;
+  a {
+    color: $gray;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.wrapper_slider {
+  .container {
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+  }
+}
+.product-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  color: $black;
+}
+
+.price-box {
+  color: #1C76C4;
+  font-size: 16px;
+}
+
+.panel {
+  border-radius: 2px;
+  .panel-heading {
+    border-radius: 0;
+  }
+}
+.em_nav {
+  .menu-item-depth-0 > .menu-container {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    z-index: 9999;
+    width: 100%;
+    padding: 13px 0;
+    background: $gray-lighter;
+  }
+  .menu-item-depth-0 {
+    a {
+      display: block;
+      padding: 7px 20px 8px;
+    }
+  }
+  .menu-item-depth-0:hover > .menu-container,
+  .menu-item-depth-0.hover > .menu-container {
+    left: 94%;
+  }
+  .menu-item-link > ul,
+  .em-catalog-navigation ul {
+    padding: 13px 0;
+    background: #fff;
+    box-shadow: 0 0 8px #ababab;
+    -moz-box-shadow: 0 0 8px #ababab;
+    -webkit-box-shadow: 0 0 8px #ababab;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+  }
+}
+.menu-item {
+  &:hover {
+    background: #fff;
+  }
+}
+.sidebar {
+  .panel {
+    background: $gray-lighter;
+  }
+  .panel-body {
+    padding: 0;
+  }
+}

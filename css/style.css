@@ -15,91 +15,101 @@ a {
 /* line 23, scss/style.scss */
 .wrapper_header {
   margin-top: 15px; }
+  /* line 25, scss/style.scss */
+  .wrapper_header .logo {
+    margin-bottom: 10px;
+    display: block;
+    margin-left: 72px; }
 
-/* line 27, scss/style.scss */
+/* line 32, scss/style.scss */
 .wrapper_menu_privary {
   background: #fafafa;
   border: 1px solid #ececec;
   border-left: 0;
   border-right: 0; }
-  /* line 32, scss/style.scss */
+  /* line 37, scss/style.scss */
   .wrapper_menu_privary ul {
     margin: 0; }
-    /* line 34, scss/style.scss */
+    /* line 39, scss/style.scss */
     .wrapper_menu_privary ul li {
       position: relative;
       float: left;
       padding: 0; }
-      /* line 38, scss/style.scss */
+      /* line 43, scss/style.scss */
       .wrapper_menu_privary ul li:hover {
         background: #fff; }
-      /* line 41, scss/style.scss */
+      /* line 46, scss/style.scss */
       .wrapper_menu_privary ul li a {
         padding: 15px 20px;
         border-left: 1px solid #dedede;
         display: inline-block; }
 
-/* line 50, scss/style.scss */
+/* line 55, scss/style.scss */
 .wrapper_content,
 .wrapper_slider,
 .wrapper_map {
   background: #ececec;
   padding: 10px 0; }
 
-/* line 57, scss/style.scss */
+/* line 62, scss/style.scss */
 .wrapper_footer {
   background: #000;
   color: #ececec; }
-  /* line 60, scss/style.scss */
+  /* line 65, scss/style.scss */
   .wrapper_footer a {
     color: #ececec; }
-    /* line 62, scss/style.scss */
+    /* line 67, scss/style.scss */
     .wrapper_footer a:hover {
       color: #1C76C4; }
 
-/* line 69, scss/style.scss */
+/* line 74, scss/style.scss */
 .wrapper_slider .container {
   background: #fff;
   padding: 10px;
   border-radius: 3px; }
 
-/* line 75, scss/style.scss */
+/* line 80, scss/style.scss */
 .product-name {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
   color: #000000; }
 
-/* line 82, scss/style.scss */
+/* line 87, scss/style.scss */
 .price-box {
   color: #1C76C4;
   font-size: 16px; }
 
-/* line 87, scss/style.scss */
+/* line 92, scss/style.scss */
 .panel {
-  border-radius: 2px; }
-  /* line 89, scss/style.scss */
+  border-radius: 2px;
+  background: none;
+  box-shadow: none; }
+  /* line 96, scss/style.scss */
   .panel .panel-heading {
     border-radius: 0; }
 
-/* line 94, scss/style.scss */
+/* line 101, scss/style.scss */
+.em_nav .menu-item-depth-0 {
+  position: relative; }
+  /* line 103, scss/style.scss */
+  .em_nav .menu-item-depth-0 a {
+    display: block;
+    padding: 7px 20px 8px; }
+/* line 108, scss/style.scss */
 .em_nav .menu-item-depth-0 > .menu-container {
   position: absolute;
   top: 0;
   left: -9999px;
-  z-index: 9999;
+  z-index: 9;
   width: 100%;
   padding: 13px 0;
   background: #fafafa; }
-/* line 104, scss/style.scss */
-.em_nav .menu-item-depth-0 a {
-  display: block;
-  padding: 7px 20px 8px; }
-/* line 109, scss/style.scss */
+/* line 117, scss/style.scss */
 .em_nav .menu-item-depth-0:hover > .menu-container,
 .em_nav .menu-item-depth-0.hover > .menu-container {
   left: 94%; }
-/* line 113, scss/style.scss */
+/* line 121, scss/style.scss */
 .em_nav .menu-item-link > ul,
 .em_nav .em-catalog-navigation ul {
   padding: 13px 0;
@@ -111,15 +121,36 @@ a {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px; }
 
-/* line 126, scss/style.scss */
+/* line 134, scss/style.scss */
 .menu-item:hover {
   background: #fff; }
 
-/* line 131, scss/style.scss */
+/* line 139, scss/style.scss */
 .sidebar .panel {
   background: #fafafa; }
-/* line 134, scss/style.scss */
+/* line 142, scss/style.scss */
 .sidebar .panel-body {
   padding: 0; }
+/* line 145, scss/style.scss */
+.sidebar .panel-heading {
+  background: #fafafa;
+  color: #505050;
+  border-color: #ececec; }
+
+/* line 152, scss/style.scss */
+.panel-primary {
+  border: none; }
+
+/* line 156, scss/style.scss */
+.product-detail {
+  background: #fff; }
+  /* line 158, scss/style.scss */
+  .product-detail li.item {
+    box-shadow: 0 1px 2px 0 #ececec;
+    -moz-box-shadow: 0 1px 2px 0 #ececec;
+    -webkit-box-shadow: 0 1px 2px 0 #ececec; }
+  /* line 163, scss/style.scss */
+  .product-detail .product-shop {
+    padding: 5px; }
 
 /*# sourceMappingURL=style.css.map */

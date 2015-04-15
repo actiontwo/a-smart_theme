@@ -35,7 +35,7 @@
               );
               wp_nav_menu($topMenu);
               ?>
-              <a href='<?php home_url() ?>'>
+              <a class="logo" href='<?php home_url() ?>'>
                 <img src="<?= wp_get_attachment_url($logo_id) ?>" alt="logo sua chua smartphone danang" width="50px"/>
               </a>
             </div>

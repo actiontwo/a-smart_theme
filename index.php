@@ -1,19 +1,13 @@
 <?php get_header() ?>
-<div class="wrapper_slider">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <?php
-                piklist('module/slider', array());
-                ?>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="wrapper_content">
     <div class="container">
       <div class="row">
-        <div class='col-md-6'>
+          <div class="col-md-4">
+              <?php
+              piklist('module/slider', array());
+              ?>
+          </div>
+        <div class='col-md-4'>
           <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title">Hỗ trợ trực tuyến </h3>
@@ -27,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class='col-md-6'>
+        <div class='col-md-4'>
           <div id="fb-root"></div>
           <script>(function (d, s, id) {
               var js, fjs = d.getElementsByTagName(s)[0];

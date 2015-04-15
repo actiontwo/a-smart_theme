@@ -98,7 +98,7 @@ ul {
   /* line 105, scss/style.scss */
   .em_nav li a {
     display: block;
-    padding: 7px 0 8px; }
+    padding: 7px 10px 8px; }
 /* line 110, scss/style.scss */
 .em_nav .menu-item-depth-0 > .menu-container {
   position: absolute;
@@ -114,7 +114,7 @@ ul {
 /* line 122, scss/style.scss */
 .em_nav .menu-item-parent:hover > .menu-container,
 .em_nav .menu-item-parent:hover > .menu-container {
-  left: 108%; }
+  left: 100%; }
 /* line 126, scss/style.scss */
 .em_nav .menu-item-link > ul,
 .em_nav .em-catalog-navigation ul {
@@ -141,24 +141,28 @@ ul {
   }
 }*/
 /* line 153, scss/style.scss */
+.sidebar .panel-body {
+  padding: 0; }
+
+/* line 157, scss/style.scss */
 .panel-no-border {
   border: none; }
 
-/* line 156, scss/style.scss */
+/* line 160, scss/style.scss */
 .panel-no-bg {
   background-color: transparent;
   box-shadow: none; }
-  /* line 159, scss/style.scss */
+  /* line 163, scss/style.scss */
   .panel-no-bg .panel-body {
     padding: 15px 0; }
 
-/* line 164, scss/style.scss */
+/* line 168, scss/style.scss */
 .box-white {
   padding: 5px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
   background: #fff; }
 
-/* line 171, scss/style.scss */
+/* line 175, scss/style.scss */
 .product-name {
   line-height: 20px; }
 

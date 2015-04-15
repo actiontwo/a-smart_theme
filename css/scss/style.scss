@@ -104,7 +104,7 @@ ul{
     position: relative;
     a {
       display: block;
-      padding: 7px 0 8px;
+      padding: 7px 10px 8px;
     }
   }
   .menu-item-depth-0 > .menu-container {
@@ -121,7 +121,7 @@ ul{
   }
   .menu-item-parent:hover > .menu-container,
     .menu-item-parent:hover > .menu-container {
-    left: 108%;
+    left: 100%;
   }
   .menu-item-link > ul,
   .em-catalog-navigation ul {
@@ -149,7 +149,11 @@ ul{
     border-color: $gray;
   }
 }*/
-
+.sidebar{
+  .panel-body{
+    padding: 0
+  }
+}
 .panel-no-border {
   border: none;
 }

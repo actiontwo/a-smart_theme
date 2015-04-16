@@ -4,7 +4,9 @@ $gray-dark: #505050;
 $blue: #1C76C4;
 $black: #000000;
 $arial: Arial;
-
+ul, li {
+  list-style: none;
+}
 body {
   color: $gray-dark;
   font-family: $arial, sans-serif;
@@ -64,11 +66,26 @@ ul{
 .wrapper_footer {
   background: #000;
   color: $gray;
+  .list-inline {
+    li {
+      vertical-align: middle;
+    }
+  }
+  .stores-list {
+    li {
+      padding-left: 20px;
+    }
+  }
   a {
     color: $gray;
     &:hover {
       color: $blue;
     }
+  }
+  .h5 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
   }
 }
 
@@ -187,3 +204,31 @@ ul{
     padding: 5px;
   }
 }*/
+.menu-item-parent.menu-item-depth-0 > a {
+  position: relative;
+  &:before {
+    content: "";
+    background-image: url("img/icon-nav-blue.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    top: 12px;
+    right: 8px;
+  }
+}
+.icon {
+  background-image:url('img/icons.png') ;
+  width: 42px;
+  height: 42px;
+  display: block;
+  &.facebook {
+    background-position: 0 -315px;
+  }
+  &.twitter {
+    background-position: -50px -315px;
+  }
+  &.pinterest {
+    background-position: -100px -315px;
+  }
+}

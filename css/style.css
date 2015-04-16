@@ -1,85 +1,100 @@
-/* line 8, scss/style.scss */
+/* line 7, scss/style.scss */
+ul, li {
+  list-style: none; }
+
+/* line 10, scss/style.scss */
 body {
   color: #505050;
   font-family: Arial, sans-serif; }
 
-/* line 13, scss/style.scss */
+/* line 15, scss/style.scss */
 a {
   color: #505050;
   cursor: pointer; }
-  /* line 16, scss/style.scss */
+  /* line 18, scss/style.scss */
   a:hover, a:focus {
     text-decoration: none;
-    color: #1c76c4; }
+    color: #1C76C4; }
 
-/* line 22, scss/style.scss */
+/* line 24, scss/style.scss */
 ul {
   padding: 0; }
 
-/* line 25, scss/style.scss */
+/* line 27, scss/style.scss */
 .wrapper_header {
   margin-top: 15px; }
-  /* line 27, scss/style.scss */
+  /* line 29, scss/style.scss */
   .wrapper_header .logo {
     margin-bottom: 10px;
     display: block;
     margin-left: 72px; }
 
-/* line 34, scss/style.scss */
+/* line 36, scss/style.scss */
 .wrapper_menu_privary {
   background: #fafafa;
   border: 1px solid #ececec;
   border-left: 0;
   border-right: 0; }
-  /* line 39, scss/style.scss */
+  /* line 41, scss/style.scss */
   .wrapper_menu_privary ul {
     margin: 0; }
-    /* line 41, scss/style.scss */
+    /* line 43, scss/style.scss */
     .wrapper_menu_privary ul li {
       position: relative;
       float: left;
       padding: 0; }
-      /* line 45, scss/style.scss */
+      /* line 47, scss/style.scss */
       .wrapper_menu_privary ul li:hover {
         background: #fff; }
-      /* line 48, scss/style.scss */
+      /* line 50, scss/style.scss */
       .wrapper_menu_privary ul li a {
         padding: 15px 20px;
         border-left: 1px solid #dedede;
         display: inline-block; }
 
-/* line 57, scss/style.scss */
+/* line 59, scss/style.scss */
 .wrapper_content,
 .wrapper_slider,
 .wrapper_map {
   background: #ececec;
   padding: 10px 0; }
 
-/* line 64, scss/style.scss */
+/* line 66, scss/style.scss */
 .wrapper_footer {
   background: #000;
   color: #ececec; }
-  /* line 67, scss/style.scss */
+  /* line 70, scss/style.scss */
+  .wrapper_footer .list-inline li {
+    vertical-align: middle; }
+  /* line 75, scss/style.scss */
+  .wrapper_footer .stores-list li {
+    padding-left: 20px; }
+  /* line 79, scss/style.scss */
   .wrapper_footer a {
     color: #ececec; }
-    /* line 69, scss/style.scss */
+    /* line 81, scss/style.scss */
     .wrapper_footer a:hover {
-      color: #1c76c4; }
+      color: #1C76C4; }
+  /* line 85, scss/style.scss */
+  .wrapper_footer .h5 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-transform: uppercase; }
 
-/* line 76, scss/style.scss */
+/* line 93, scss/style.scss */
 .wrapper_slider .container {
   background: #fff;
   padding: 10px;
   border-radius: 3px; }
 
-/* line 82, scss/style.scss */
+/* line 99, scss/style.scss */
 .product-name {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  color: black; }
+  color: #000000; }
 
-/* line 89, scss/style.scss */
+/* line 106, scss/style.scss */
 .price-box {
   color: #1C76C4;
   font-size: 16px; }
@@ -92,14 +107,14 @@ ul {
     border-radius: 0;
   }
 }*/
-/* line 103, scss/style.scss */
+/* line 120, scss/style.scss */
 .em_nav li {
   position: relative; }
-  /* line 105, scss/style.scss */
+  /* line 122, scss/style.scss */
   .em_nav li a {
     display: block;
     padding: 7px 10px 8px; }
-/* line 110, scss/style.scss */
+/* line 127, scss/style.scss */
 .em_nav .menu-item-depth-0 > .menu-container {
   position: absolute;
   top: 0;
@@ -108,14 +123,14 @@ ul {
   width: 100%;
   padding: 13px 0;
   background: white; }
-  /* line 118, scss/style.scss */
+  /* line 135, scss/style.scss */
   .em_nav .menu-item-depth-0 > .menu-container li {
     padding: 5px 10px; }
-/* line 122, scss/style.scss */
+/* line 139, scss/style.scss */
 .em_nav .menu-item-parent:hover > .menu-container,
 .em_nav .menu-item-parent:hover > .menu-container {
   left: 100%; }
-/* line 126, scss/style.scss */
+/* line 143, scss/style.scss */
 .em_nav .menu-item-link > ul,
 .em_nav .em-catalog-navigation ul {
   padding: 13px 0;
@@ -123,7 +138,7 @@ ul {
   border: 1px solid #ddd;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
-/* line 135, scss/style.scss */
+/* line 152, scss/style.scss */
 .menu-item:hover {
   background: #fff; }
 
@@ -140,29 +155,29 @@ ul {
     border-color: $gray;
   }
 }*/
-/* line 153, scss/style.scss */
+/* line 170, scss/style.scss */
 .sidebar .panel-body {
   padding: 0; }
 
-/* line 157, scss/style.scss */
+/* line 174, scss/style.scss */
 .panel-no-border {
   border: none; }
 
-/* line 160, scss/style.scss */
+/* line 177, scss/style.scss */
 .panel-no-bg {
   background-color: transparent;
   box-shadow: none; }
-  /* line 163, scss/style.scss */
+  /* line 180, scss/style.scss */
   .panel-no-bg .panel-body {
     padding: 15px 0; }
 
-/* line 168, scss/style.scss */
+/* line 185, scss/style.scss */
 .box-white {
   padding: 5px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
   background: #fff; }
 
-/* line 175, scss/style.scss */
+/* line 192, scss/style.scss */
 .product-name {
   line-height: 20px; }
 
@@ -178,3 +193,34 @@ ul {
     padding: 5px;
   }
 }*/
+/* line 207, scss/style.scss */
+.menu-item-parent.menu-item-depth-0 > a {
+  position: relative; }
+  /* line 209, scss/style.scss */
+  .menu-item-parent.menu-item-depth-0 > a:before {
+    content: "";
+    background-image: url("img/icon-nav-blue.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    top: 12px;
+    right: 8px; }
+
+/* line 220, scss/style.scss */
+.icon {
+  background-image: url("img/icons.png");
+  width: 42px;
+  height: 42px;
+  display: block; }
+  /* line 225, scss/style.scss */
+  .icon.facebook {
+    background-position: 0 -315px; }
+  /* line 228, scss/style.scss */
+  .icon.twitter {
+    background-position: -50px -315px; }
+  /* line 231, scss/style.scss */
+  .icon.pinterest {
+    background-position: -100px -315px; }
+
+/*# sourceMappingURL=style.css.map */

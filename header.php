@@ -46,8 +46,9 @@
           </div>
           <div class="col-md-4">
 
-            <p><?php echo $theme_options['address']; ?></p>
-            <p><?php echo $theme_options['landline']; ?> - <?php echo $theme_options['cell_phone']; ?></p>
+            <p><i class='glyphicon glyphicon-map-marker'></i> <?php echo $theme_options['address']; ?></p>
+            <p><?php echo $theme_options['landline']; ?></p>
+            <p><i class='glyphicon glyphicon-phone'></i> <?php echo $theme_options['cell_phone']; ?></p>
           </div>
         </div>
       </div>

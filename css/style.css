@@ -228,3 +228,7 @@ ul {
   /* line 234, scss/style.scss */
   .icon.pinterest {
     background-position: -100px -315px; }
+
+/* line 240, scss/style.scss */
+.panel-primary .panel-title a:hover {
+  color: #fff; }

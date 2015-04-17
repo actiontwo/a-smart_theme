@@ -74,11 +74,11 @@ ul{
       vertical-align: middle;
     }
   }
-/*  .stores-list {
-    li {
-      padding-left: 20px;
-    }
-  }*/
+  /*  .stores-list {
+      li {
+        padding-left: 20px;
+      }
+    }*/
   a {
     color: $black;
     &:hover {
@@ -233,5 +233,12 @@ ul{
   }
   &.pinterest {
     background-position: -100px -315px;
+  }
+}
+.panel-primary{
+  .panel-title {
+    a:hover{
+      color:#fff;
+    }
   }
 }

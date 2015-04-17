@@ -16,58 +16,59 @@
 
   <body>
     <div class="wrapper_header">
-        <div class="container">
-          <?php
-          $theme_options = get_option('page_info_setting');
-          $logo_id       = $theme_options['logo'];
-          ?>
-          <div class='row'>
-            <div class="col-md-4">
-              <?php
-              $topMenu       = array(
-                  'theme_location' => 'topMenu',
-                  'container' => 'nav',
-                  'container_id' => 'top-menu',
-                  'container_class' => '',
-                  'menu_class' => 'list-unstyled list-inline',
-                  'menu' => 'header_nav',
-                  'walker' => new Top_Menu_Walker
-              );
-              wp_nav_menu($topMenu);
-              ?>
-              <a class="logo" href='<?php home_url() ?>'>
-                <img src="<?= wp_get_attachment_url($logo_id) ?>" alt="logo sua chua smartphone danang" width="50px"/>
-              </a>
-            </div>
-            <div class="col-md-4">
+      <div class="container">
+        <?php
+        $theme_options = get_option('page_info_setting');
+        $logo_id       = $theme_options['logo'];
+        ?>
+        <div class='row'>
+          <div class="col-md-4">
+            <?php
+            $topMenu       = array(
+                'theme_location' => 'topMenu',
+                'container' => 'nav',
+                'container_id' => 'top-menu',
+                'container_class' => '',
+                'menu_class' => 'list-unstyled list-inline',
+                'menu' => 'header_nav',
+                'walker' => new Top_Menu_Walker
+            );
+            wp_nav_menu($topMenu);
+            ?>
+            <a class="logo" href='<?php home_url() ?>'>
+              <img src="<?= wp_get_attachment_url($logo_id) ?>" alt="logo sua chua smartphone danang" width="50px"/>
+            </a>
+          </div>
+          <div class="col-md-4">
 
-              <?php get_search_form(); ?>
+            <?php get_search_form(); ?>
 
-            </div>
-            <div class="col-md-4">
-              <p><?php echo $theme_options['address']; ?></p>
-              <p><?php echo $theme_options['landline']; ?> - <?php echo $theme_options['cell_phone']; ?></p>
-            </div>
+          </div>
+          <div class="col-md-4">
+
+            <p><?php echo $theme_options['address']; ?></p>
+            <p><?php echo $theme_options['landline']; ?> - <?php echo $theme_options['cell_phone']; ?></p>
           </div>
         </div>
+      </div>
     </div>
     <div class="wrapper_menu_privary">
-        <div class="container">
-            <div class='row'>
-                <div class='col-md-12'>
-                    <?php
-                    $primaryMenu   = array(
-                        'theme_location' => 'primaryMenu',
-                        'container' => 'nav',
-                        'container_id' => 'primary-menu',
-                        'container_class' => '',
-                        'menu_class' => 'list-unstyled list-inline',
-                        'menu' => 'header_nav',
-                        'walker' => new Top_Menu_Walker
-                    );
-                    wp_nav_menu($primaryMenu);
-                    ?>
-                </div>
-            </div>
+      <div class="container">
+        <div class='row'>
+          <div class='col-md-12'>
+            <?php
+            $primaryMenu   = array(
+                'theme_location' => 'primaryMenu',
+                'container' => 'nav',
+                'container_id' => 'primary-menu',
+                'container_class' => '',
+                'menu_class' => 'list-unstyled list-inline',
+                'menu' => 'header_nav',
+                'walker' => new Top_Menu_Walker
+            );
+            wp_nav_menu($primaryMenu);
+            ?>
+          </div>
         </div>
+      </div>
     </div>

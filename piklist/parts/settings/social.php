@@ -41,3 +41,14 @@ piklist('field',
     ),
     'columns' => 6
 ));
+piklist('field',
+    array(
+    'type' => 'textarea'
+    , 'field' => 'fanpage_facebook'
+    , 'label' => 'Fanpage facebook'
+    , 'description' => 'This is a your twitter link.'
+    , 'attributes' => array(
+        'class' => 'text'
+    ),
+    'columns' => 12
+));

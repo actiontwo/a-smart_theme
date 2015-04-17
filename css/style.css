@@ -14,7 +14,7 @@ a {
   /* line 18, scss/style.scss */
   a:hover, a:focus {
     text-decoration: none;
-    color: #1C76C4; }
+    color: #1c76c4; }
 
 /* line 24, scss/style.scss */
 ul {
@@ -59,42 +59,48 @@ ul {
   background: #ececec;
   padding: 10px 0; }
 
-/* line 66, scss/style.scss */
+/* line 65, scss/style.scss */
+.wrapper_map {
+  background: #fff; }
+
+/* line 69, scss/style.scss */
 .wrapper_footer {
-  background: #000;
-  color: #ececec; }
-  /* line 70, scss/style.scss */
+  background: #fafafa;
+  color: black;
+  /*  .stores-list {
+      li {
+        padding-left: 20px;
+      }
+    }*/ }
+  /* line 73, scss/style.scss */
   .wrapper_footer .list-inline li {
     vertical-align: middle; }
-  /* line 75, scss/style.scss */
-  .wrapper_footer .stores-list li {
-    padding-left: 20px; }
-  /* line 79, scss/style.scss */
+  /* line 82, scss/style.scss */
   .wrapper_footer a {
-    color: #ececec; }
-    /* line 81, scss/style.scss */
+    color: black; }
+    /* line 84, scss/style.scss */
     .wrapper_footer a:hover {
-      color: #1C76C4; }
-  /* line 85, scss/style.scss */
+      color: #1c76c4; }
+  /* line 88, scss/style.scss */
   .wrapper_footer .h5 {
     margin-top: 20px;
     font-size: 18px;
     text-transform: uppercase; }
 
-/* line 93, scss/style.scss */
+/* line 96, scss/style.scss */
 .wrapper_slider .container {
   background: #fff;
   padding: 10px;
   border-radius: 3px; }
 
-/* line 99, scss/style.scss */
+/* line 102, scss/style.scss */
 .product-name {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  color: #000000; }
+  color: black; }
 
-/* line 106, scss/style.scss */
+/* line 109, scss/style.scss */
 .price-box {
   color: #1C76C4;
   font-size: 16px; }
@@ -107,14 +113,14 @@ ul {
     border-radius: 0;
   }
 }*/
-/* line 120, scss/style.scss */
+/* line 123, scss/style.scss */
 .em_nav li {
   position: relative; }
-  /* line 122, scss/style.scss */
+  /* line 125, scss/style.scss */
   .em_nav li a {
     display: block;
     padding: 7px 10px 8px; }
-/* line 127, scss/style.scss */
+/* line 130, scss/style.scss */
 .em_nav .menu-item-depth-0 > .menu-container {
   position: absolute;
   top: 0;
@@ -123,14 +129,14 @@ ul {
   width: 100%;
   padding: 13px 0;
   background: white; }
-  /* line 135, scss/style.scss */
+  /* line 138, scss/style.scss */
   .em_nav .menu-item-depth-0 > .menu-container li {
     padding: 5px 10px; }
-/* line 139, scss/style.scss */
+/* line 142, scss/style.scss */
 .em_nav .menu-item-parent:hover > .menu-container,
 .em_nav .menu-item-parent:hover > .menu-container {
   left: 100%; }
-/* line 143, scss/style.scss */
+/* line 146, scss/style.scss */
 .em_nav .menu-item-link > ul,
 .em_nav .em-catalog-navigation ul {
   padding: 13px 0;
@@ -138,7 +144,7 @@ ul {
   border: 1px solid #ddd;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); }
 
-/* line 152, scss/style.scss */
+/* line 155, scss/style.scss */
 .menu-item:hover {
   background: #fff; }
 
@@ -155,29 +161,29 @@ ul {
     border-color: $gray;
   }
 }*/
-/* line 170, scss/style.scss */
+/* line 173, scss/style.scss */
 .sidebar .panel-body {
   padding: 0; }
 
-/* line 174, scss/style.scss */
+/* line 177, scss/style.scss */
 .panel-no-border {
   border: none; }
 
-/* line 177, scss/style.scss */
+/* line 180, scss/style.scss */
 .panel-no-bg {
   background-color: transparent;
   box-shadow: none; }
-  /* line 180, scss/style.scss */
+  /* line 183, scss/style.scss */
   .panel-no-bg .panel-body {
     padding: 15px 0; }
 
-/* line 185, scss/style.scss */
+/* line 188, scss/style.scss */
 .box-white {
   padding: 5px;
   box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
   background: #fff; }
 
-/* line 192, scss/style.scss */
+/* line 195, scss/style.scss */
 .product-name {
   line-height: 20px; }
 
@@ -193,10 +199,10 @@ ul {
     padding: 5px;
   }
 }*/
-/* line 207, scss/style.scss */
+/* line 210, scss/style.scss */
 .menu-item-parent.menu-item-depth-0 > a {
   position: relative; }
-  /* line 209, scss/style.scss */
+  /* line 212, scss/style.scss */
   .menu-item-parent.menu-item-depth-0 > a:before {
     content: "";
     background-image: url("img/icon-nav-blue.png");
@@ -207,20 +213,18 @@ ul {
     top: 12px;
     right: 8px; }
 
-/* line 220, scss/style.scss */
+/* line 223, scss/style.scss */
 .icon {
   background-image: url("img/icons.png");
   width: 42px;
   height: 42px;
   display: block; }
-  /* line 225, scss/style.scss */
+  /* line 228, scss/style.scss */
   .icon.facebook {
     background-position: 0 -315px; }
-  /* line 228, scss/style.scss */
+  /* line 231, scss/style.scss */
   .icon.twitter {
     background-position: -50px -315px; }
-  /* line 231, scss/style.scss */
+  /* line 234, scss/style.scss */
   .icon.pinterest {
     background-position: -100px -315px; }
-
-/*# sourceMappingURL=style.css.map */

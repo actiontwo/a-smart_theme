@@ -1,0 +1,10 @@
+.most-sellest {
+  .panel-heading {
+    @include border-bottom-grey;
+    margin-bottom: 16px;
+  } 
+  .panel-body img {
+    @include size(60px,60px);
+ 
+  }
+}

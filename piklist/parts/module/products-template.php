@@ -24,12 +24,8 @@
               <a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="product-image">
 
                 <?php
-                $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
-                if (!$url) {
-                  $url = 'http://placehold.it/200x200';
-                }
                 ?>
-                <img src="<?= $url ?>" alt="..." class="" width="100%">
+                <img src="<?= get_url_img($post->ID) ?>" alt="..." class="" width="100%">
               </a>
               <hr>
               <div class="product-shop">

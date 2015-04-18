@@ -4,76 +4,38 @@
   Description: A description of what my widget does
  */
 ?>
-<div class="no_quickshop">
-  <div class="widget widget-recentreview-products">
-    <div class="widget-title">
-      <div class="menu-title sub-title-header">Sản phẩm bán chạy</div>
-    </div>
-    <div class="widget-products">
-      <ul class="products-list">
-        <li class="item" style="  ">
-          <a href="./product.html" title="Sony Ericsson W810i" class="product-image">
-            <img src="<?= MEDIA ?>catalog/product/img_product_003.jpg" width="70" height="70" alt="Sony Ericsson W810i"></a>
-          <div class="product-shop">
-            <div class="f-fix">
-              <div class="ratings">
-                <div class="rating-box">
-                  <div class="rating" style="width:62%"></div>
-                </div>
-                <span class="amount"><a href="#" onclick="setLocation('./product.html')">3 Review(s)</a></span>
-              </div>
-              <h3 class="product-name"><a href="./product.html" title="Sony Ericsson W810i)">Sony Ericsson W810i</a></h3>
-              <div class="price-box">
-                <span class="regular-price" id="product-price-18-widget-new-list">
-                  <span class="price price-yellow">$399.99</span>                                    </span>
-              </div>
-            </div>
+<!--'meta_key' => 'life_insurance_company_represented',
+    'meta_value' => $company,-->
+<?php
+$query_param = array(
+    'post_type' => array('sua_chua', 'phu_kien'),
+    'meta_key' => 'ban_chay_nhat',
+    'meta_value' => array('yes'),
+);
+$query       = new WP_Query($query_param);
+?>
+
+
+<div class="most-sellest">
+  <div class="panel-heading">
+    <h3 class="panel-title">Sản phẩm bán chạy</h3>
+  </div>
+  <div class="panel-body">
+    <?php if ($query->have_posts()):while ($query->have_posts()):$query->the_post(); ?>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="<?php the_permalink() ?>"><img src="<?= get_url_img(get_the_ID(), '60x60') ?>" alt ="..." /></a>
           </div>
-        </li>
-        <li class="item" style="  ">
-          <a href="./product.html" title="Acer Ferrari 3200 Notebook Computer PC" class="product-image">
-            <img src="<?= MEDIA ?>catalog/product/img_product_004.jpg" width="70" height="70" alt="Acer Ferrari 3200 Notebook Computer PC"></a>
-          <div class="product-shop">
-            <div class="f-fix">
-              <div class="ratings">
-                <div class="rating-box">
-                  <div class="rating" style="width:64%"></div>
-                </div>
-                <span class="amount"><a href="#" onclick="setLocation('./product.html')">6 Review(s)</a></span>
-              </div>
-              <h3 class="product-name"><a href="./product.html" title="Acer Ferrari 3200 Notebook Computer PC)">Acer Ferrari 3200 Notebook Computer PC</a></h3>
-              <div class="price-box">
-                <span class="regular-price" id="product-price-26-widget-new-list">
-                  <span class="price price-yellow">$1,799.99</span>                                    </span>
-              </div>
-            </div>
+          <div class="col-md-8">
+            <?php $custom_fields = get_post_custom(get_the_ID()); ?>
+            <h5 class = "title-product"><a href = "<?php the_permalink() ?>" class = ""><?php the_title() ?></a></h5>
+            <p class = "price-product text-primary text-uppercase"><?= $custom_fields['gia'][0] ?></p>
           </div>
-        </li>
-        <li class="item last" style="  ">
-          <a href="./product.html" title="CN Clogs Beach/Garden Clog" class="product-image">
-            <img src="<?= MEDIA ?>catalog/product/img_product_005.jpg" width="70" height="70" alt="CN Clogs Beach/Garden Clog"></a>
-          <div class="product-shop">
-            <div class="f-fix">
-              <div class="ratings">
-                <div class="rating-box">
-                  <div class="rating" style="width:62%"></div>
-                </div>
-                <span class="amount"><a href="#" onclick="setLocation('./product.html')">3 Review(s)</a></span>
-              </div>
-              <h3 class="product-name"><a href="./product.html" title="CN Clogs Beach/Garden Clog)">CN Clogs Beach/Garden Clog</a></h3>
-              <div class="price-box">
-                <span class="regular-price" id="product-price-83-widget-new-list">
-                  <span class="price price-yellow">$15.99</span>                                    </span>
-                <a href="./product.html" class="minimal-price-link">
-                  <span class="label">As low as:</span>
-                  <span class="price price-yellow" id="product-minimal-price-83-widget-new-list">
-                    $13.99            </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
+        </div>
+        <br>
+        <?php
+      endwhile;
+    endif;
+    ?>
   </div>
 </div>

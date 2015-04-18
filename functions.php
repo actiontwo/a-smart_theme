@@ -18,8 +18,18 @@ foreach ($includes as $include) {
   require_once($include);
 }
 
-function debug($data){
+function debug($data)
+{
   echo '<pre>';
   var_dump($data);
   echo '</pre>';
+}
+
+function get_url_img($id, $size = '200x200')
+{
+  $url = wp_get_attachment_url(get_post_thumbnail_id($id));
+  if (!$url) {
+    $url = "http://placehold.it/$size";
+  }
+  return $url;
 }

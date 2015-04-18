@@ -9,10 +9,6 @@ function themeslug_enqueue_script()
             'src' => "//code.jquery.com/jquery-1.11.2.min.js",
             'in_footer' => true),
         array(
-            'id' => 'jquery-migrate',
-            'src' => "//code.jquery.com/jquery-migrate-1.2.1.min.js",
-            'in_footer' => true),
-        array(
             'id' => 'bootstrap',
             'src' => BOOTSTRAP . "js/bootstrap.min.js",
             'in_footer' => true),

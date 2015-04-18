@@ -1,0 +1,14 @@
+.product-essential {
+  padding: 10px;
+  margin-bottom: 10px;
+  @include background-white;
+}
+.product-details-tab{
+  .tab-content{
+     @include background-white;
+     padding: 10px;
+     border:1px solid #ddd;
+     border-top: 0;
+  }
+  
+}

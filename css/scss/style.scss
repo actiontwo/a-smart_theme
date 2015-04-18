@@ -4,13 +4,11 @@ $gray-dark: #505050;
 $blue: #1C76C4;
 $black: #000000;
 $arial: Arial;
-ul, li {
-  list-style: none;
-}
 body {
   color: $gray-dark;
   font-family: $arial, sans-serif;
-  font: normal 12px/1.35 Roboto,Arial,Helvetica,sans-serif;
+  font: normal 14px/1.35 Roboto,Arial,Helvetica,sans-serif;
+  background: $gray;
 }
 
 a {
@@ -26,7 +24,8 @@ ul{
   padding: 0;
 }
 .wrapper_header {
-  margin-top: 15px;
+  padding-top: 15px;
+  background: #fff;
   .logo {
     margin-bottom: 10px;
     display: block;
@@ -450,3 +449,8 @@ ul{
     background-position: -267px -855px;
   }
 }
+@import '_mixin.scss';
+@import '_most_sellest.scss';
+@import '_single_product.scss';
+@import '_page-content.scss';
+@import '_list_blog.scss';

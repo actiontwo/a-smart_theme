@@ -5,10 +5,22 @@
 }
 .product-details-tab{
   .tab-content{
-     @include background-white;
-     padding: 10px;
-     border:1px solid #ddd;
-     border-top: 0;
+    @include background-white;
+    padding: 10px;
+    border:1px solid #ddd;
+    border-top: 0;
+    ul {
+      padding-left: 15px;
+    }
   }
-  
+
+}
+.product-image {
+  @include size(300px,300px);
+  img {
+    width: 100%;
+  }
+}
+.empty-product {
+  min-height: 200px;
 }

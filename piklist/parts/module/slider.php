@@ -1,24 +1,28 @@
+<?php
+$theme_options = get_option('page_info_setting');
+?>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <?php foreach ($theme_options['home_slider'] as $key => $imageId) { ?>
+      <li data-target="#carousel-example-generic" data-slide-to="<?= $key ?>" class=""></li>
+    <?php } ?>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="<?= MEDIA ?>em_slideshow/1380248952_1_slideshow2.jpg" alt="...">
-      <div class="carousel-caption">
 
-      </div>
-    </div>
-    <div class="item">
-      <img src="<?= MEDIA ?>em_slideshow/1380248952_1_slideshow2.jpg" alt="...">
-      <div class="carousel-caption">
+    <?php foreach ($theme_options['home_slider'] as $key => $imageId) { ?>
+      <div class="item <?= ($key == 0) ? 'active' : '' ?>">
+        <?= wp_get_attachment_image($imageId, 'full'); ?>
+        <!--<img src="<?= MEDIA ?>em_slideshow/1380248952_1_slideshow2.jpg" alt="...">-->
+        <div class="carousel-caption">
 
+        </div>
       </div>
-    </div>
+    <?php } ?>
+
+
 
   </div>
 
@@ -33,8 +37,3 @@
   </a>
 </div>
 
-<script>
-  $(document).ready(function () {
-    $('.carousel').carousel()
-  });
-</script>

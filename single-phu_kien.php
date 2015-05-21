@@ -3,5 +3,7 @@
 <?php
 piklist('module/single-product-template'
 );
-echo '<br>';
+?>
+<br>
+<?php
 get_footer();

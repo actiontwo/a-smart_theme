@@ -18,22 +18,19 @@ $theme_options = get_option('page_info_setting');
         <p class="h5 text-primary">Thông tin Asmart</p>
         <ul class='list-unstyled'>
           <li>Thống kê : </li>
-          <li>Tổng số lượt truy cập :</li>
-          <li>Đang online: </li>
+          <li>Tổng số lượt truy cập :<?= wp_statistics_visitor('total') ?></li>
+          <li>Đang online: <?= wp_statistics_useronline() ?></li>
           <li>Giờ làm việc: 8h-19h</li>
           <li>Chủ nhật: 9h-12h</li>
         </ul>
       </div>
-      <div class='col-md-3'>
-        <p class="h5 text-primary">Hỗ trợ trực tuyến </p>
-        <ul class='list-unstyled'>
-          <li><b>Kĩ Thuật:</b> 0966555576</li>
-          <li><b>Bán Hàng:</b> 0966555576</li>
-          <li><b>Thắc mắc khiếu nại:</b> 0966555576</li>
-        </ul>
+      <div class='col-md-6'>
+      <div class="row">
+      <div class='col-md-7'>
+
 
       </div>
-      <div class='col-md-3'>
+      <div class='col-md-5'>
         <p class="h5 text-primary">Follow Us</p>
         <ul class="list-inline">
 
@@ -42,12 +39,18 @@ $theme_options = get_option('page_info_setting');
           <li><a title="pinterest" href="<?= $theme_options['twitter_link'] ?>"><span class="icon pinterest"></span></a></li>
         </ul>
       </div>
+      </div>
+      </div>
+      
     </div>
-
+    <br>
+    <br>
 
   </div>
 </div>
-
+<div class='show-detail-product'>
+  adsfas
+</div>
 <?php wp_footer() ?>
 </body>
 </html>

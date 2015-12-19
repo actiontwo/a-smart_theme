@@ -4,7 +4,6 @@ $theme_options = get_option('page_info_setting');
 ?>
 <div class="wrapper_content">
   <div class="container">
-
     <br>
     <div class="row">
       <div class='col-md-3'>

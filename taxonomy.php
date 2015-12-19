@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <br>
 
 <div class='container'>
@@ -10,60 +11,60 @@
     </div>
     <div class='col-md-9'>
       <section class='main-content'>
-        <?php
-        $currentTaxonomy = get_queried_object();
-
-        $currentPostType = get_post_type($post);
-        $args            = array(
-            'orderby' => 'name',
-            'order' => 'DESC',
-            'hide_empty' => false,
-            'hierarchical' => true,
-            'child_of' => $currentTaxonomy->term_id,
-            'pad_counts' => false,
-        );
-
-        $terms = get_terms($currentTaxonomy->taxonomy, $args);
-        if (empty($terms)) {
-          
-          piklist('module/products-template',
-              array('data' =>
-              array(
-                  'title' => $currentTaxonomy->name,
-                  'type' => $currentPostType,
-                  'url' => '',
-                  'tax_query' =>
-                  array(
-                      array(
-                          'taxonomy' => $currentTaxonomy->taxonomy,
-                          'field' => 'slug',
-                          'terms' => array($currentTaxonomy->slug)
-                      ))
-              ))
+          <?php
+          $currentTaxonomy = get_queried_object();
+//          var_dump($currentTaxonomy);
+          $currentPostType =array('phu_kien','sua_chua');// get_post_type($post->ID);
+          $args            = array(
+              'orderby' => 'name',
+              'order' => 'DESC',
+              'hide_empty' => false,
+              'hierarchical' => true,
+              'child_of' => $currentTaxonomy->term_id,
+              'pad_counts' => false,
           );
-
-        } else {
-         
-          foreach ($terms as $term) {
+//          echo $currentPostType;
+          $terms = get_terms($currentTaxonomy->taxonomy, $args);
+          if (empty($terms)) {
 
             piklist('module/products-template',
                 array('data' =>
                 array(
-                    'title' => $term->name,
+                    'title' => $currentTaxonomy->name,
                     'type' => $currentPostType,
-                    'url' => home_url().'/'.$currentTaxonomy->taxonomy.'/'.$term->slug,
+                    'url' => '',
                     'tax_query' =>
                     array(
                         array(
                             'taxonomy' => $currentTaxonomy->taxonomy,
                             'field' => 'slug',
-                            'terms' => array($term->slug)
+                            'terms' => array($currentTaxonomy->slug)
                         ))
                 ))
             );
+
+          } else {
+
+            foreach ($terms as $term) {
+
+              piklist('module/products-template',
+                  array('data' =>
+                  array(
+                      'title' => $term->name,
+                      'type' => $currentPostType,
+                      'url' => home_url().'/'.$currentTaxonomy->taxonomy.'/'.$term->slug,
+                      'tax_query' =>
+                      array(
+                          array(
+                              'taxonomy' => $currentTaxonomy->taxonomy,
+                              'field' => 'slug',
+                              'terms' => array($term->slug)
+                          ))
+                  ))
+              );
+            }
           }
-        }
-        ?>
+          ?>
       </section>
     </div>
   </div>

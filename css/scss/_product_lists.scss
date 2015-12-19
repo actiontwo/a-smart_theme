@@ -3,6 +3,7 @@
 }*/
 .content-detail{
   display: none;
+
 }
 .box-white {
   padding: 5px;
@@ -25,10 +26,10 @@
   z-index: 100;
   top: 200px;
   left: 200px;
-  width: 400px;
-  min-height: 300px;
+  width: 250px;
+  min-height: 200px;
   background: #fff;
-  border: 1px solid #bbb;
+//  border: 1px solid #bbb;
   padding: 10px;
-  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
 }

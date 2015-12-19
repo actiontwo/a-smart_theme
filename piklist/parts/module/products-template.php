@@ -3,8 +3,8 @@
 
   <?php
   $query_param = array(
-      'post_type' => $data['type'],
-      'posts_per_page' => isset($data['per_page']) ? $data['per_page'] : -1,
+    'post_type' => $data['type'],
+    'posts_per_page' => isset($data['per_page']) ? $data['per_page'] : -1,
   );
   if (isset($data['filter'])) {
     foreach ($data['filter'] as $key => $value) {
@@ -14,7 +14,7 @@
   if (isset($data['tax_query'])) {
     $query_param['tax_query'] = $data['tax_query'];
   }
-//        debug($query_param);
+  //        debug($query_param);
   $query = new WP_Query($query_param);
   if ($query->have_posts()):
     ?>
@@ -22,6 +22,7 @@
       <div class="panel-heading">
         <h3 class="panel-title">
           <a href='<?= $data['url'] ?>'><?= $data['title'] ?></a>
+
           <div class="group-control-button pull-right">
             <i class='glyphicon glyphicon-chevron-left ct-left'></i>
             <i class='glyphicon glyphicon-chevron-right ct-right'></i>
@@ -38,53 +39,17 @@
               echo '</ul> <ul class="row list-unstyled product-slider-group">';
             }
             $count++;
-//          debug($custom_fields['tinh_trang_san_pham']);
             ?>
             <li class="col-md-3">
-              <div class="box-white">
-                <a href="<?php the_permalink() ?>" title="<?php the_title() ?>" class="product-image">
-
-                  <?php ?>
-                  <img src="<?= get_url_img($post->ID) ?>" alt="..." class="" width="100%">
-                </a>
-                <hr>
-                <div class="product-shop">
-                  <div class="f-fix">
-                    <!--product name-->
-                    <h5 class="product-name">
-                      <strong>
-                        <a href="<?php the_permalink() ?>" title="<?php the_title() ?>">
-
-                          <?php
-                          substr("abcdef", 0, -1);
-                          $title         = get_the_title();
-                          $length_string = strlen($title);
-                          if ($length_string > 40) {
-                            $title = substr($title, 0, 40).' ...';
-                          }
-                          echo $title;
-                          ?>
-                        </a>
-                      </strong>
-                    </h5>
-
-                    <!--product description-->
-                    <div class="price_review">
-                      <!--product price-->
-                      <div class="price-box">
-                        <span class="regular-price" id="product-price-45-widget-new-list">
-                          <span class="price price-yellow"><?= $custom_fields['gia'][0] ?></span></span>
-                      </div>
-
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class='content-detail'>
-                <h3><?php the_title() ?></h3>
-                <?php the_excerpt() ?>
-              </div>
+              <?php
+              piklist('module/products-template-detail', array(
+                'url_link_post' => get_the_permalink(),
+                'url_link_img' => get_url_img($post->ID),
+                'title' => get_the_title(),
+                'price' => $custom_fields['gia'][0],
+                'short_content' => $custom_fields['thong_so_ky_thuat'][0]
+              ));
+              ?>
             </li>
           <?php endwhile;
           ?>

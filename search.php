@@ -12,7 +12,7 @@
           <h4><a class='text-primary' href='<?php the_permalink() ?>'><?php the_title() ?></a></h4>
           <div class='row'>
 
-            <div class="col-md-3">
+            <div class="col-xs-3">
               <a href="#" class="thumbnail">
                 <?php if (has_post_thumbnail()): ?>
                   <?php the_post_thumbnail() ?>
@@ -24,7 +24,7 @@
               </a>
             </div>
 
-            <div class="col-md-9">
+            <div class="col-xs-9">
     <?php the_excerpt() ?>
               <a href='<?php the_permalink() ?>' class='text-info'>Xem thêm ...</a>
             </div>

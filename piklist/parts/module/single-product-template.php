@@ -9,52 +9,53 @@
       <?php
       wp_reset_postdata();
       ?>
-      <section class = 'main-content  em-main-wrapper'>
-        <div class = "product-view">
-          <div class = "product-essential">
+      <section class='main-content  em-main-wrapper'>
+        <div class="product-view">
+          <div class="product-essential">
 
-            <div class = "row">
-              <div class = "col-md-6">
-                <div class = "product-img-box">
-                  <p class = "product-image">
-                    <a class = "cloud-zoom" id = "image_zoom">
-                      <img src = "<?= get_url_img($post->ID, '300x300') ?>" alt = "" title = "HTC Touch Diamond">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="product-img-box">
+                  <p class="product-image">
+                    <a class="cloud-zoom" id="image_zoom">
+                      <img src="<?= get_url_img($post->ID, '300x300') ?>" alt="" title="HTC Touch Diamond">
                     </a>
                   </p>
-                  <div class = "slider more-views slideshow-more-views">
-                    <div id = "slider_moreview">
-<!--                      <ul class = 'list-inline'>
-                        <li class = "item">
-                          <a class = "cloud-zoom-gallery">
-                            <img width = "70px" height = "70px"
-                                 src = "http://placehold.it/70x70" alt = ""/>
-                          </a>
 
-                        </li>
-                        <li class = "item">
-                          <a class = "cloud-zoom-gallery">
-                            <img width = "70px" height = "70px"
-                                 src = "http://placehold.it/70x70" alt = ""/>
-                          </a>
+                  <div class="slider more-views slideshow-more-views">
+                    <div id="slider_moreview">
+                      <!--                      <ul class = 'list-inline'>
+                                              <li class = "item">
+                                                <a class = "cloud-zoom-gallery">
+                                                  <img width = "70px" height = "70px"
+                                                       src = "http://placehold.it/70x70" alt = ""/>
+                                                </a>
 
-                        </li>
-                        <li class = "item">
-                          <a class = "cloud-zoom-gallery">
-                            <img width = "70px" height = "70px"
-                                 src = "http://placehold.it/70x70" alt = ""/>
-                          </a>
+                                              </li>
+                                              <li class = "item">
+                                                <a class = "cloud-zoom-gallery">
+                                                  <img width = "70px" height = "70px"
+                                                       src = "http://placehold.it/70x70" alt = ""/>
+                                                </a>
 
-                        </li>
-                      </ul>-->
+                                              </li>
+                                              <li class = "item">
+                                                <a class = "cloud-zoom-gallery">
+                                                  <img width = "70px" height = "70px"
+                                                       src = "http://placehold.it/70x70" alt = ""/>
+                                                </a>
+
+                                              </li>
+                                            </ul>-->
                     </div>
                   </div>
                 </div>
               </div>
-              <div class = "col-md-6">
-                <div class = "product-shop no-related">
-                  <div class = "product-shop-wrapper ">
+              <div class="col-md-6">
+                <div class="product-shop no-related">
+                  <div class="product-shop-wrapper ">
 
-                    <div class = "product-name">
+                    <div class="product-name">
                       <h1><?php the_title() ?></h1>
                     </div>
 
@@ -63,13 +64,18 @@
                       <span class="regular-price" id="product-price-166">
                         <span class="price text-uppercase"><?= $custom_fields['gia'][0] ?></span>                                    </span>
                     </div>
-                    <div class="short-description">
-                      <h2>Quick Overview</h2>
-
-                      <div class="std">
-                        <?php the_excerpt() ?>
-                      </div>
+                    <hr>
+                    <div class="text-danger info-box">
+                      <p><b>Bảo hành :</b> <span class="text-primary"><?= $custom_fields['bao_hanh'][0] ?></span></p>
+                      <p><b>Tình trạng :</b> <span class="text-primary"><?= $custom_fields['tinh_trang'][0] ?></span></p>
                     </div>
+<!--                    <div class="short-description">-->
+<!--                      <h2>Quick Overview</h2>-->
+<!---->
+<!--                      <div class="std">-->
+<!--                        --><?php //the_excerpt() ?>
+<!--                      </div>-->
+<!--                    </div>-->
 
                     <div id="social-share" class="hide-lte0 hide-lte1 hide-lte2"></div>
                   </div>
@@ -91,7 +97,7 @@
               </li>
 
             </ul>
-            
+
             <!-- Tab panes -->
             <div class="tab-content">
               <div role="tabpanel" class="tab-pane active" id="detail"><?php the_content() ?></div>
@@ -109,8 +115,8 @@
         </div>
       </section>
       <?php
-//        endwhile;
-//      endif;
+      //        endwhile;
+      //      endif;
       ?>
 
     </div>
